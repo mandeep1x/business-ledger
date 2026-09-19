@@ -1,0 +1,26 @@
+# NOTES.md — 3 lines at the end of every ring/loop.
+
+## Ring 0 — Setup (date: 2026-09-19)
+- Built: first Python run from VS Code terminal, `print("khata ready")`.
+- Broke: nothing; gate green on first run.
+- Next: Ring 1 variables.
+
+## Ring 1 — Variables (date: 2026-09-19)
+- Built: bill_line with f-string, `Ramesh owes: Rs 500`.
+- Broke: deleted the assignment to see NameError, then restored it.
+- Next: Ring 2. Status: PASSED (file green + Q1/Q2/Q3 correct).
+
+## Ring 2 — Conditions (date: 2026-09-19)
+- Built: phone rule added as third early-return block by Mandeep himself.
+- Broke: `and` vs `or` dead check, then number-vs-digits confusion. Fixed with `len(str(phone)) != 10`.
+- Next: Ring 3. Status: PASSED (file green + Q1/Q2/Q3 done).
+
+## Ring 3 — Loops (date: 2026-09-19)
+- Built: 4-entry balance pattern, filter `cid == 1` understood via experiment.
+- Broke: edited gate data + stale assert message; fixed message to match 700.
+- Next: Ring 3 QUESTIONS, then Ring 4. Status: PASSED (file green + Q1/Q2/Q3 done, debug print removed).
+
+## Session 2026-09-19 (night halt)
+- Rings passed: R0, R1, R2, R3. Ring 4 opened, file not run yet.
+- Commits due: init docs + rings r00-r03 with NOTES.
+- Resume tomorrow: run r04-functions.py, then Ring 4 QUESTIONS.

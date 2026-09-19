@@ -1,0 +1,12 @@
+# Personal teacher files — stay on this laptop, never pushed
+MENTOR.md
+IDEAS.md
+learning/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local env / data (Loop 1+)
+.env
+data.json
