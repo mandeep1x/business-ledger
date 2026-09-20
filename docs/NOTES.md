@@ -24,3 +24,8 @@
 - Rings passed: R0, R1, R2, R3. Ring 4 opened, file not run yet.
 - Commits due: init docs + rings r00-r03 with NOTES.
 - Resume tomorrow: run r04-functions.py, then Ring 4 QUESTIONS.
+
+## Ring 4 — Functions (date: 2026-09-20)
+- Built: full line-by-line understanding; broke and restored file twice by own experiments.
+- Broke: passed `3` instead of list (argument order); print-vs-return confusion solved via None experiment; stale gate message fixed.
+- Next: Ring 5. Status: PASSED (file green + Q1/Q2/Q3 done).
