@@ -1,19 +1,45 @@
-# Dukkan Khata — Mandeep's first backend project
+# Business Ledger CLI – Core Backend Build
 
-**In one line:** a small shop's credit ledger. Which customer, how much due, when given, when repaid.
+A simple command-line tool for small shop owners to track customer debts and payments. 
 
-**Why this project?**
-- It uses exactly what the Rings teach, nothing extra
-- PSQL plugs in later: customers + transactions = the real use of JOINs
-- It is showable in production: a money domain, not a todo app
+---
 
-**What it does (only 5 jobs, nothing more):**
-1. Add a customer (name + phone)
-2. Due entry (customer, amount, date)
-3. Repayment entry (payment)
-4. Balance per customer (dues minus payments)
-5. Total pending of the whole shop
+## 🎯 The Main Purpose
+The main purpose of this project is to replace an old-school **paper notebook** used by shopkeepers with a clean digital ledger. It answers three simple questions for the shop owner:
+1. Who owes money?
+2. How much do they owe?
+3. When did they pay it back?
 
-**What it does NOT do (not now):**
-- No login/auth, no web, no photos — those arrive in Loops 4-5
-- It runs on the CLI, not in a browser
+---
+
+## 📊 How the Data Flows
+
+```text
+[Shop Owner CLI]
+       │
+       ▼
+ ┌───────────┐         ┌────────────────┐
+ │ CUSTOMERS │ ──────> │  TRANSACTIONS  │
+ ├───────────┤         ├────────────────┤
+ │ * Name    │         │ * Due Entry    │
+ │ * Phone   │         │ * Repayment    │
+ └───────────┘         │ * Date         │
+                       └────────────────┘
+```
+
+## 🛠️ What it Does (Only 5 Features)
+The system only does these 5 basic tasks:
+
+* **Add a Customer:** Save a customer's name and phone number.
+* **Record a Debt:** Log how much money a customer borrowed and the date.
+* **Record a Payment:** Log when a customer pays back their debt.
+* **Check Customer Balance:** Show exactly how much an individual customer still owes (Total Debt minus Total Payments).
+* **Check Shop Total:** Show the total amount of pending money owed by all customers combined.
+
+---
+
+## 🚫 What it Does NOT Do (Out of Scope)
+To keep the backend simple and clean, these features are omitted for now:
+* **No Login System:** No usernames or passwords required.
+* **No Web Interface:** It runs entirely inside your terminal screen, not in a browser.
+* **No Photos:** You cannot upload receipts or profile pictures.
