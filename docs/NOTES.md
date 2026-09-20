@@ -29,3 +29,8 @@
 - Built: full line-by-line understanding; broke and restored file twice by own experiments.
 - Broke: passed `3` instead of list (argument order); print-vs-return confusion solved via None experiment; stale gate message fixed.
 - Next: Ring 5. Status: PASSED (file green + Q1/Q2/Q3 done).
+
+## Ring 5 — Data structures (date: 2026-09-20)
+- Built: dict one-step lookup vs list loop search, duplicate-key insight from own project.
+- Broke: nothing; file untouched, gate green first run. `[]` vs `.get()` learned via KeyError vs None.
+- Next: Ring 6 (OOP). Status: PASSED (file green + Q1/Q2/Q3 done).
