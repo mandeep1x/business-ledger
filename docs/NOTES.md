@@ -34,3 +34,11 @@
 - Built: dict one-step lookup vs list loop search, duplicate-key insight from own project.
 - Broke: nothing; file untouched, gate green first run. `[]` vs `.get()` learned via KeyError vs None.
 - Next: Ring 6 (OOP). Status: PASSED (file green + Q1/Q2/Q3 done).
+
+## Ring 6 — OOP (date: 2026-09-21)
+- Built: Customer + Khata classes; blueprint, self, encapsulation via own examples.
+- Broke: claimed PASS with gate commented (silent run); fixed data honestly to 400-100=300.
+- Next: Loop 0 (project build). Status: PASSED (file green + Q1/Q2/Q3 done).
+
+## RINGS COMPLETE — 2026-09-21
+- R0 setup, R1 variables, R2 conditions, R3 loops, R4 functions, R5 data structures, R6 OOP. All green + questioned.
